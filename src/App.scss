@@ -1,0 +1,102 @@
+@import url("//cdn.muicss.com/mui-0.9.41/css/mui.min.css");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,500&display=swap");
+$font-body: "Poppins", sans-serif;
+
+@import "./style/custom";
+@import "./style/calendar";
+@import "./style/header";
+@import "./style/footer";
+@import "./style/home";
+@import "./style/addshifts";
+@import "./style/myProfile";
+
+body {
+  font: 100% $font-body;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  display: block;
+  text-align: center;
+}
+
+* {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+}
+
+.signupBtn,
+.loginBtn,
+// .logoutBtn,
+.btn {
+  color: white;
+  background-color: #009bcc;
+  width: 80%;
+  max-width: 300px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.logoutBtn.btn {
+  color: black;
+  background-color: transparent;
+  /* width: 0px; */
+  /* max-width: 0px; */
+  height: 0px;
+  border-radius: 0px;
+  margin-top: -18px;
+  font-weight: 500;
+  margin-left: 36px;
+  border: none;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.timeWiselogo {
+  margin-top: 25%;
+}
+
+.logoImg {
+  width: 80%;
+  max-width: 300px;
+}
+
+.navbar-nav {
+  display: inline-flex;
+}
+.navItem {
+  margin-left: 10px;
+}
+
+.userProfileJson {
+  text-align: left;
+}
+
+.MuiPickersBasePicker-pickerView {
+  height: 43vh;
+}
+
+@media (min-width: 499px) {
+  .MuiGrid-root.homeLogin.MuiGrid-item.MuiGrid-grid-xs-12 {
+    margin-top: -50px;
+  }
+  .text-center.hero.timeWiselogo {
+    margin-top: 10%;
+  }
+  .homeContent {
+    margin-top: 10%;
+  }
+}

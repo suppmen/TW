@@ -1,0 +1,44 @@
+div.MuiPickersBasePicker-pickerView {
+  max-width: 100%;
+  display: block;
+}
+.MuiGrid-root.MuiGrid-item {
+  margin-top: -7px;
+  text-align: center;
+}
+.shifdayitem {
+  padding-top: 14px;
+  color: white;
+}
+.choosedate {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.map-wrapper p {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 702px) {
+  .MuiPickersBasePicker-container {
+    width: 700px;
+  }
+  span.MuiTypography-root.MuiPickersCalendarHeader-dayLabel.MuiTypography-caption {
+    width: 62px;
+  }
+  .MuiPickersCalendar-week {
+    div {
+      width: 55px;
+      height: 55px;
+      margin: 5px;
+      .shifdayitem {
+        padding-top: 0;
+        color: white;
+      }
+      .MuiGrid-item {
+        margin: 0;
+        margin-bottom: -40px;
+      }
+    }
+  }
+}
